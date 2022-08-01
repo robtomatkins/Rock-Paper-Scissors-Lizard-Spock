@@ -1,7 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 
+:root {
+    background-color: #f9f5ec;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Mouse Memoirs, sans-serif;
+  
+}
+
+/* Header styling */
+
+.header {
+    background-color: #191919;
+    color: #f9f5ec;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    font-size: 1.5rem;
 }
