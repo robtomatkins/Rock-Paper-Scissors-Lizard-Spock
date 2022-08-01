@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,40 @@
     <script src="https://kit.fontawesome.com/cb3385a891.js" crossorigin="anonymous"></script>
     <title>Game Screen</title>
 </head>
+
 <body>
+    <!-- Header which runs consistently through home.html, rules.html and game.html-->
     <header class="header">
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
 
-    <!-- Game message section containing message for player if they win/lose-->
-    <div class="win/lose-message">
-        <h2>Lizard Beats Paper. You Lose!</h2>
-    </div>
+    <!-- Game Section -->
+    <section>
 
-    <!-- Move-choice area containing controls in form of buttons for player to choose-->
-    <div class="move-choice">
+        <!-- Game message area containing message for player if they win/lose-->
+        <div class="game-message">
+            <h2>Lizard Beats Paper. You Lose!</h2>
+        </div>
 
-    </div>
-
-    <div class="score-board-section">
-        <div id="player">
+        <!-- Move-choice are containing controls in form of buttons for player to choose-->
+        <div class="move-choice">
 
         </div>
-        <div id="score">
 
-        </div>
-        <div id="Comp">
+        <!-- score board area containing three divs, displaying player, comp and running score-->
+        <div class="score-board">
+            <div id="player">
 
-        </div>
-    </div>
+            </div>
+            <div id="score">
+
+            </div>
+            <div id="Comp">
+
+            </div>
+    </section>
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
