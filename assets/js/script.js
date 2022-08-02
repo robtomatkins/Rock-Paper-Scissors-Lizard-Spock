@@ -10,24 +10,42 @@ const scissors_div = document.getElementById("scissors")
 const lizard_div = document.getElementById("lizard")
 const spock_div = document.getElementById("spock")
 
-/* Event listener for control buttons */
+
+function compChoice() {
+    /* computer choice array - chooses either rock, paper, scissors, lizard or spock from the array*/
+    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    const randomNumber = Math.floor(Math.random() * 5);
+    return choices(randomNumber);
+
+}
+
+/* game function is called when rock_div is clicked*/
+function game(playerChoice) {
+     
+}
+
+function runGame() {
 
 rock_div.addEventListener('click', function() {
-    console.log("you clicked on rock"); 
+    game("r"); 
 })
 
 paper_div.addEventListener('click', function() {
-    console.log("you clicked on rock"); 
+    game("p"); 
 })
 
 scissors_div.addEventListener('click', function() {
-    console.log("you clicked on rock"); 
+    game("sc"); 
 })
 
 lizard_div.addEventListener('click', function() {
-    console.log("you clicked on rock"); 
+    game("l"); 
 })
 
 spock_div.addEventListener('click', function() {
-    console.log("you clicked on rock"); 
+    game("sp"); 
 })
+
+}
+
+runGame();
