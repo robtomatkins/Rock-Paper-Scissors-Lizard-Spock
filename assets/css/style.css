@@ -190,7 +190,7 @@
 
 /* game screen styling */
 
-.score-board {
+#score-board {
     width: 200px;
     margin: 20px auto;
     background-color: #191919;
@@ -232,7 +232,7 @@
 
 /* game message area */
 
-.game-message {
+#game-message {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
