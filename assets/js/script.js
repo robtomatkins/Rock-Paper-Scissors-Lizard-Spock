@@ -1,5 +1,5 @@
-const playerScore = 0;
-const compScore = 0;
+let playerScore = 0;
+let compScore = 0;
 const playerScore_span = document.getElementById("player-score");
 const compScore_span = document.getElementById("comp-score");
 const scoreBoard_div = document.getElementById("score-board");
@@ -10,32 +10,7 @@ const scissors_div = document.getElementById("scissors")
 const lizard_div = document.getElementById("lizard")
 const spock_div = document.getElementById("spock")
 
-runGame();
-
-function runGame() {
-    rock_div.addEventListener('click', function() {
-        game("r"); 
-    })
-    
-    paper_div.addEventListener('click', function() {
-        game("p"); 
-    })
-    
-    scissors_div.addEventListener('click', function() {
-        game("sc"); 
-    })
-    
-    lizard_div.addEventListener('click', function() {
-        game("l"); 
-    })
-    
-    spock_div.addEventListener('click', function() {
-        game("sp"); 
-    })
-    
-    }
-
-/* computer choice array - chooses either rock, paper, scissors, lizard or spock from the array - This is how we get the computer choie */
+/* computer choice array - chooses either rock, paper, scissors, lizard or spock from the array*/
 function getCompChoice() {
     const choices = ['r', 'p', 'sc', 'l', 'sp'];
     const randomNumber = Math.floor(Math.random() * 5);
@@ -43,9 +18,26 @@ function getCompChoice() {
     
 }
 
-/* game function is called when rock_div/paper_div/scissors_div/lizard_div or spock_div is clicked */
+
+function youWin(player, comp) {
+    playerScore++; 
+    console.log(playerScore);
+    playerScore_span.innerHTML = playerScore;
+    gameMessage_div.innerHTML = "You win!"
+}
+
+function youLose() {
+    compScore++;
+    console.log(compScore);
+
+}
+
+function draw() {
+
+}
+/* game function is called when rock_div is clicked */
 function game(playerChoice) {
-     const compChoice = getCompChoice(); /*  <---- We make compChoice a variable of the function GetCompChoice to use in switch case*/
+     const compChoice = getCompChoice();
      switch (playerChoice + compChoice) {
         case "rl":
         case "scl":
@@ -81,13 +73,28 @@ function game(playerChoice) {
      }
 }
 
-function youWin();
+function runGame() {
+rock_div.addEventListener('click', function() {
+    game("r"); 
+})
 
-function youLose();
+paper_div.addEventListener('click', function() {
+    game("p"); 
+})
 
-function draw();
+scissors_div.addEventListener('click', function() {
+    game("sc"); 
+})
 
+lizard_div.addEventListener('click', function() {
+    game("l"); 
+})
 
+spock_div.addEventListener('click', function() {
+    game("sp"); 
+})
 
-/* testing Notes - tested game was working by pressing each control button until each option of win, draw and lose appeard in console.log */
-/* development notes - consider adding first to 5 feature by using .length method paired with an alert function 
+}
+
+runGame();
+
