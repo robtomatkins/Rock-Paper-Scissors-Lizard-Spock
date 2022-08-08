@@ -8,8 +8,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Mouse Memoirs, sans-serif;
-  
+    font-family: 'Mouse Memoirs', sans-serif;
+
 }
 
 /* Header styling */
@@ -44,14 +44,14 @@
     margin-bottom: 20px;
     text-align: center;
     font-size: 3rem;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
 }
 
 #start-btn-home {
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
     width: 80%;
@@ -59,14 +59,14 @@
     background-color: #f9f5ec;
     border-radius: 5px;
     padding-top: 5px;
-    
+
 }
 
 #start-btn-home:hover {
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
     width: 80%;
@@ -75,13 +75,14 @@
     box-shadow: 0px 4px 16px #191919;
     border-radius: 5px;
     padding-top: 5px;
-    
+
 }
+
 #start-btn-home a {
-    text-decoration: none; 
-    font-family: Mouse Memoirs, sans-serif;
+    text-decoration: none;
+    font-family: 'Mouse Memoirs', sans-serif;
     color: #191919;
-    
+
 }
 
 
@@ -89,7 +90,7 @@
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
     width: 80%;
@@ -97,26 +98,26 @@
     background-color: #f9f5ec;
     border-radius: 5px;
     padding-top: 5px;
-    
+
 }
 
 #instructions-btn-home a {
-    text-decoration: none; 
-    font-family: Mouse Memoirs, sans-serif;
+    text-decoration: none;
+    font-family: 'Mouse Memoirs', sans-serif;
     color: #191919;
-    
+
 }
 
 #instructions-btn-home:hover {
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
     width: 80%;
     height: 50px;
-    background-color:  #f0d2a5;
+    background-color: #f0d2a5;
     box-shadow: 0px 4px 16px #191919;
     border-radius: 5px;
     padding-top: 5px;
@@ -143,14 +144,14 @@
     margin-bottom: 20px;
     text-align: center;
     font-size: 3rem;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
 }
 
 #start-btn-instructions {
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
     width: 80%;
@@ -158,14 +159,14 @@
     background-color: #f9f5ec;
     border-radius: 5px;
     padding-top: 5px;
-    
+
 }
 
 #start-btn-instructions:hover {
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
     font-size: 2rem;
     margin-bottom: 20px;
     width: 80%;
@@ -174,20 +175,21 @@
     box-shadow: 0px 4px 16px #191919;
     border-radius: 5px;
     padding-top: 5px;
-    
+
 }
+
 #start-btn-instructions a {
-    text-decoration: none; 
-    font-family: Mouse Memoirs, sans-serif;
+    text-decoration: none;
+    font-family: 'Mouse Memoirs', sans-serif;
     color: #191919;
-    
+
 }
 
 .instructions-menu p {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 30px;
-    color:#191919;
+    color: #191919;
 }
 
 /* game screen styling */
@@ -214,7 +216,7 @@
     border: solid 5px #d6543e;
     text-align: center;
     padding: 15px 20px;
-    font-family: Mouse Memoirs, sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
     position: relative;
 }
 
@@ -225,7 +227,7 @@
 }
 
 #player {
-    background-color:#191919;
+    background-color: #191919;
     position: absolute;
     top: 15px;
     left: -90px;
@@ -262,7 +264,7 @@
 .controls {
     display: inline-block;
     margin-left: 20px;
-    
+
 }
 
 .rock-img {
@@ -294,11 +296,9 @@
 
 .controls:hover {
     cursor: pointer;
-    -webkit-transition-property: all; 
-    -webkit-transition-duration: 0.3s; 
-    -webkit-transition-timing-function: ease; 
-    transform: scale(1.2); 
-} 
+    transition: all .2s ease-in-out; 
+    transform: scale(1.2);
+}
 
 /* Footer Style Rules */
 
@@ -311,7 +311,7 @@ footer {
 }
 
 footer h2 {
-    color:  #efbca5;
+    color: #efbca5;
     text-align: center;
     font-size: 105%;
     letter-spacing: 1px;
@@ -342,329 +342,328 @@ footer i:hover {
 /* For screen sizes for 768px wide and below (iPads and Tablets) */
 @media screen and (max-width: 768px) {
 
-/* Header styling */
+    /* Header styling */
 
-.header {
-    background-color: #191919;
-    color: #f9f5ec;
-    height: 60px;
-    width: 100%;
-    text-align: center;
-    letter-spacing: 2px;
-    padding-top: 15px;
-    font-size: 10px;
-    margin-bottom: 20px;
-}
+    .header {
+        background-color: #191919;
+        color: #f9f5ec;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px;
+        padding-top: 15px;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
 
-/* Home screen styling */
+    /* Home screen styling */
 
-.home-menu-container {
-    width: 280px;
-    height: 300px;
-    background-color: #8a8883;
-    margin: 0 auto;
-    margin-top: 120px;
-    padding: 20px;
-    padding-top: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 16px #191919;
-}
+    .home-menu-container {
+        width: 280px;
+        height: 300px;
+        background-color: #8a8883;
+        margin: 0 auto;
+        margin-top: 120px;
+        padding: 20px;
+        padding-top: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 16px #191919;
+    }
 
-.home-menu-container h2 {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 3rem;
-    font-family: Mouse Memoirs, sans-serif;
-}
+    .home-menu-container h2 {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Mouse Memoirs', sans-serif;
+    }
 
-#start-btn-home {
-    text-decoration: none;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 50px;
-    background-color: #f9f5ec;
-    border-radius: 5px;
-    padding-top: 5px;
-    
-}
+    #start-btn-home {
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 50px;
+        background-color: #f9f5ec;
+        border-radius: 5px;
+        padding-top: 5px;
 
-#start-btn-home:hover {
-    text-decoration: none;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 50px;
-    background-color: #d6543e;
-    box-shadow: 0px 4px 16px #191919;
-    border-radius: 5px;
-    padding-top: 5px;
-    
-}
-#start-btn-home a {
-    text-decoration: none; 
-    font-family: Mouse Memoirs, sans-serif;
-    color: #191919;
-    
-}
+    }
 
+    #start-btn-home:hover {
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 50px;
+        background-color: #d6543e;
+        box-shadow: 0px 4px 16px #191919;
+        border-radius: 5px;
+        padding-top: 5px;
 
-#instructions-btn-home {
-    text-decoration: none;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 50px;
-    background-color: #f9f5ec;
-    border-radius: 5px;
-    padding-top: 5px;
-    
-}
+    }
 
-#instructions-btn-home a {
-    text-decoration: none; 
-    font-family: Mouse Memoirs, sans-serif;
-    color: #191919;
-    
-}
+    #start-btn-home a {
+        text-decoration: none;
+        font-family: 'Mouse Memoirs', sans-serif;
+        color: #191919;
 
-#instructions-btn-home:hover {
-    text-decoration: none;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 50px;
-    background-color:  #f0d2a5;
-    box-shadow: 0px 4px 16px #191919;
-    border-radius: 5px;
-    padding-top: 5px;
-}
-
-/* Instructions screen styling */
-
-.instructions-menu-container {
-    width: 280px;
-    height: 300px;
-    background-color: #8a8883;
-    margin: 0 auto;
-    margin-top: 120px;
-    padding: 20px;
-    padding-top: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 16px #191919;
-}
+    }
 
 
-.instructions-menu-container h2 {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 3rem;
-    font-family: Mouse Memoirs, sans-serif;
-}
+    #instructions-btn-home {
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 50px;
+        background-color: #f9f5ec;
+        border-radius: 5px;
+        padding-top: 5px;
 
-#start-btn-instructions {
-    text-decoration: none;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 50px;
-    background-color: #f9f5ec;
-    border-radius: 5px;
-    padding-top: 5px;
-    
-}
+    }
 
-#start-btn-instructions:hover {
-    text-decoration: none;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Mouse Memoirs, sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 50px;
-    background-color: #efbca5;
-    box-shadow: 0px 4px 16px #191919;
-    border-radius: 5px;
-    padding-top: 5px;
-    
-}
-#start-btn-instructions a {
-    text-decoration: none; 
-    font-family: Mouse Memoirs, sans-serif;
-    color: #191919;
-    
-}
+    #instructions-btn-home a {
+        text-decoration: none;
+        font-family: 'Mouse Memoirs', sans-serif;
+        color: #191919;
 
-.instructions-menu p {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    color:#191919;
-}
+    }
 
-/* game screen styling */
+    #instructions-btn-home:hover {
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 50px;
+        background-color: #f0d2a5;
+        box-shadow: 0px 4px 16px #191919;
+        border-radius: 5px;
+        padding-top: 5px;
+    }
 
-#game-container {
-    width: 280px;
-    height: 400px;
-    background-color: #8a8883;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 10px;
-    padding-top: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 16px #191919;
+    /* Instructions screen styling */
 
-}
-
-#score-board {
-    width: 100px;
-    margin: 20px auto;
-    background-color: #191919;
-    color: #f9f5ec;
-    font-size: 1.8rem;
-    border-radius: 5px;
-    border: solid 5px #d6543e;
-    text-align: center;
-    padding: 15px 20px;
-    font-family: Mouse Memoirs, sans-serif;
-    position: relative;
-}
-
-.label {
-    font-size: 1.5rem;
-    padding: 2px 10px;
-    border-radius: 5px;
-}
-
-#player {
-    background-color:#191919;
-    position: absolute;
-    top: 15px;
-    left: -90px;
-    border-radius: 5px;
-    border: solid 5px#efbca5;
-    color: #f9f5ec;
-}
-
-#comp {
-    background-color: #191919;
-    position: absolute;
-    top: 15px;
-    right: -80px;
-    border-radius: 5px;
-    border: solid 5px #efbca5;
-    color: #f9f5ec;
-}
-
-/* game message area */
-
-#game-message {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-}
-
-/* game controls area */
-
-.controls-area {
-    text-align: center;
-    margin-top: px;
-}
-
-.controls {
-    display: inline-block;
-    margin-left: 2.5px; 
-}
-
-.rock-img {
-    width: 50px;
-    height: 50px;
-}
-
-.paper-img {
-    width: 50px;
-    height: 50px;
-
-}
-
-.scissors-img {
-    width: 50px;
-    height: 50px;
-}
-
-.lizard-img {
-    width: 50px;
-    height: 50px;
-
-}
-
-.spock-img {
-    width: 50px;
-    height: 50px;
-
-}
+    .instructions-menu-container {
+        width: 280px;
+        height: 300px;
+        background-color: #8a8883;
+        margin: 0 auto;
+        margin-top: 120px;
+        padding: 20px;
+        padding-top: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 16px #191919;
+    }
 
 
-.controls:hover {
-    cursor: pointer;
-    -webkit-transition-property: all; 
-    -webkit-transition-duration: 0.3s; 
-    -webkit-transition-timing-function: ease; 
-    transform: scale(1.2); 
-} 
+    .instructions-menu-container h2 {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Mouse Memoirs', sans-serif;
+    }
 
-/* Footer Style Rules */
+    #start-btn-instructions {
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 50px;
+        background-color: #f9f5ec;
+        border-radius: 5px;
+        padding-top: 5px;
 
-footer {
-    height: 100px;
-    width: 100%;
-    background-color: #191919;
-}
+    }
 
-footer h2 {
-    color:  #efbca5;
-    text-align: center;
-    font-size: 65%;
-    letter-spacing: 1px;
-    padding-top: 5px;
-}
+    #start-btn-instructions:hover {
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 50px;
+        background-color: #efbca5;
+        box-shadow: 0px 4px 16px #191919;
+        border-radius: 5px;
+        padding-top: 5px;
 
-footer ul {
-    text-align: center;
-}
+    }
 
-footer li {
-    display: inline;
-    font-size: 200%;
-    margin-right: 4%;
-    margin-left: 4%;
-}
+    #start-btn-instructions a {
+        text-decoration: none;
+        font-family: 'Mouse Memoirs', sans-serif;
+        color: #191919;
 
-footer i {
-    color: #f9f5ec;
-}
+    }
 
-footer i:hover {
-    color: #d6543e;
-}
+    .instructions-menu p {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        color: #191919;
+    }
+
+    /* game screen styling */
+
+    #game-container {
+        width: 280px;
+        height: 400px;
+        background-color: #8a8883;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px;
+        padding-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 16px #191919;
+
+    }
+
+    #score-board {
+        width: 100px;
+        margin: 20px auto;
+        background-color: #191919;
+        color: #f9f5ec;
+        font-size: 1.8rem;
+        border-radius: 5px;
+        border: solid 5px #d6543e;
+        text-align: center;
+        padding: 15px 20px;
+        font-family: 'Mouse Memoirs', sans-serif;
+        position: relative;
+    }
+
+    .label {
+        font-size: 1.5rem;
+        padding: 2px 10px;
+        border-radius: 5px;
+    }
+
+    #player {
+        background-color: #191919;
+        position: absolute;
+        top: 15px;
+        left: -90px;
+        border-radius: 5px;
+        border: solid 5px#efbca5;
+        color: #f9f5ec;
+    }
+
+    #comp {
+        background-color: #191919;
+        position: absolute;
+        top: 15px;
+        right: -80px;
+        border-radius: 5px;
+        border: solid 5px #efbca5;
+        color: #f9f5ec;
+    }
+
+    /* game message area */
+
+    #game-message {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    /* game controls area */
+
+    .controls-area {
+        text-align: center;
+    }
+
+    .controls {
+        display: inline-block;
+        margin-left: 2.5px;
+    }
+
+    .rock-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .paper-img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .scissors-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .lizard-img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .spock-img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+
+    .controls:hover {
+        cursor: pointer;
+        transition: all .2s ease-in-out; 
+        transform: scale(1.2);
+    }
+
+    /* Footer Style Rules */
+
+    footer {
+        height: 100px;
+        width: 100%;
+        background-color: #191919;
+    }
+
+    footer h2 {
+        color: #efbca5;
+        text-align: center;
+        font-size: 65%;
+        letter-spacing: 1px;
+        padding-top: 5px;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+
+    footer li {
+        display: inline;
+        font-size: 200%;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+    footer i {
+        color: #f9f5ec;
+    }
+
+    footer i:hover {
+        color: #d6543e;
+    }
 
 }
