@@ -9,8 +9,8 @@ const paper_div = document.getElementById("paper")
 const scissors_div = document.getElementById("scissors")
 const lizard_div = document.getElementById("lizard")
 const spock_div = document.getElementById("spock")
-const player_div = document.getElementById("player")
-const comp_div = document.getElementById("comp")
+let compScoreImage = document.getElementById("comp-image")
+let playerScoreImage = document.getElementById("player-image")
 
 /* computer choice array - chooses either rock, paper, scissors, lizard or spock from the array*/
 function getCompChoice() {
@@ -20,25 +20,7 @@ function getCompChoice() {
     
 }
 
-/* function for if player wins - increases playerScore by 1, displays message and changes colour of border on player label */
-function youWin() {
-    playerScore++; 
-    playerScore_span.innerHTML = playerScore;
-    gameMessage_div.innerHTML = "You win!";
-}
-
-function youLose() {
-    compScore++;
-    compScore_span.innerHTML = compScore
-    gameMessage_div.innerHTML = "You lose... bad luck!";
-
-}
-
-function draw() {
-    gameMessage_div.innerHTML = "It's a draw... try again!"
-
-}
-/* game function is called when rock_div is clicked */
+/* main game function which is called when rock_div, paper_div, scissors_div, lizard_div or spock_div is clicked */
 function game(playerChoice) {
      const compChoice = getCompChoice();
      switch (playerChoice + compChoice) {
@@ -76,6 +58,8 @@ function game(playerChoice) {
      }
 }
 
+/* function to start game via event listener on control buttons */
+
 function runGame() {
 rock_div.addEventListener('click', function() {
     game("r"); 
@@ -101,3 +85,22 @@ spock_div.addEventListener('click', function() {
 
 runGame();
 
+/* function for if player wins - increases playerScore by 1 & displays message */
+function youWin() {
+    playerScore++; 
+    playerScore_span.innerHTML = playerScore;
+    gameMessage_div.innerHTML = "You win!";
+}
+
+/* function for if player loses - increases compScore by 1 & displays lose message */
+function youLose() {
+    compScore++;
+    compScore_span.innerHTML = compScore
+    gameMessage_div.innerHTML = "You lose... bad luck!";
+
+}
+
+function draw() {
+    gameMessage_div.innerHTML = "It's a draw... try again!"
+
+}
