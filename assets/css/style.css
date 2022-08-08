@@ -265,6 +265,33 @@
     
 }
 
+.rock-img {
+    width: 90px;
+    height: 90px;
+}
+
+.paper-img {
+    width: 90px;
+    height: 90px;
+
+}
+
+.scissors-img {
+    width: 90px;
+    height: 90px;
+}
+
+.lizard-img {
+    width: 90px;
+    height: 90px;
+
+}
+
+.spock-img {
+    width: 90px;
+    height: 90px;
+}
+
 .controls:hover {
     cursor: pointer;
     -webkit-transition-property: all; 
@@ -565,9 +592,37 @@ footer i:hover {
 
 .controls {
     display: inline-block;
-    margin-left: 2.5px;
-    
+    margin-left: 2.5px; 
 }
+
+.rock-img {
+    width: 50px;
+    height: 50px;
+}
+
+.paper-img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.scissors-img {
+    width: 50px;
+    height: 50px;
+}
+
+.lizard-img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.spock-img {
+    width: 50px;
+    height: 50px;
+
+}
+
 
 .controls:hover {
     cursor: pointer;
