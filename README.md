@@ -1,108 +1,281 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Rock-Paper-Scissors-lizard-Spock**
+## JavaScript Portolio Project
+<br>
+Rock-Paper-Scissors-Lizard-Spock is a fun interactive game, whose functuality can be applied to any anything that requires an element of chance. As the player, you will face off against the computer, luckliy no skill is needed as the computer choice is selected at random through the use of JavaScript. The game is fully repsonsive, so can be accessed quicky via a mobile device if needed. 
+<br>
 
-Welcome robtomatkins,
+### [**View Live Site**](https://robtomatkins.github.io/Woodland-Warriors/index.html)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Image displaying site repsonsively on range of devices](assets/images/responsivedesignimage.jpg)
+<br>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Table of Contents
 
-## Gitpod Reminders
+- [**UX**](#ux)
+    - Overview
+    - Color Story
+        - Fonts
+        - Images
+        - Hover Attributes 
+        - Anchor Links
+- [**Site Structure**](#site-structure)
+    - Home Page Contents
+    - About Page Contents
+    - Signup Page Contents
+    - Technologies
+- [**Site Features**](#site-features)
+    - The Logo and Navigation Bar
+    - The Hero Image
+    - The 'Walks' Section
+    - The 'About' Section
+    - The Sign Up Form 
+    - The Footer
+- [**Testing**](#testing)
+    - Bugs
+    - Responsive Testing
+        - Web dev tools
+    - Performance Testing
+        - Lighthouse
+    - Validation Testing
+        - W3C HTML & CSS
+    - Brower Testing
+        - tested in firefox, safari and chrome
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+    - Content
+    - Media 
+- [**Project Screenshots**](#project-screenshots)
+<hr>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# UX
 
-`python3 -m http.server`
+- ## Overview 
+    - The site has been designed to be visually striking and simple to navigate, with all three pages linked via anchor links in thier sections, and the navigation bar which sits at the top of each page.
+    <br>
+    Design elements run consistently throughout all three pages, such as the hero image (different image but same size), navigation bar, footer and colour scheme. The 'walks' and 'about' section both have the same layout but have different imagery for the text box backgrouds. 
+<br>
 
-A blue button should appear to click: _Make Public_,
+- ## Colour Story 
 
-Another blue button should appear to click: _Open Browser_.
+    - #30302f (Dark Grey for fonts)
+    - #9cb466 (Green to tie in with woodland theme)
+    - #eeeeee (off white as less harsh option to full white)
+    - rgba(33, 33, 33)
+        - Converted to rgba from #30302f using RGBA Color Picker so I could apply as transparent overlay and background
+    - rgba(156, 180, 102)
+        - Converted to rgba from #9cb466 using RGBA Color Picker so I could apply as transparent overlay and background
+<br>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- ## Fonts
+    - Downloaded from [Google Fonts](https://fonts.google.com/). Roboto (body) and Prompt (headings) were used at various weights throughout site. Roboto was used for the body and Prompt for the headings - these fonts were chosen as they visually compliment eachother well. 
+<br>
 
-A blue button should appear to click: _Make Public_,
+- ## Images
+    - Images were obtained from [Pexels](https://www.pexels.com/).
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+- ## Hover Attributes 
+    - Hover attributes were a design choice to create interactivty, and to highlight links or information of importance, such as the links to [Woodland Trust](https://www.woodlandtrust.org.uk/) in the walks section. 
+<br>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- ## Anchor Links
+    - Anchor Links were used a design choice to asist with navigation on the site and also for the social media links and to provide further information in the 'walks' section. 
+<br>
 
-To log into the Heroku toolbelt CLI:
+[**Back to table of contents**](#table-of-contents)
+<hr>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# Site Structure 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- ## [Home Page](https://robtomatkins.github.io/Woodland-Warriors/index.html)
+    - Logo and navigation bar 
+    - Hero image with centered text box to provide context
+    - 'walks' section providing information about upcoming walks
+    - Footer section with contact details and social media links
+    <br>
+    <br>
+- ## [About Page](https://robtomatkins.github.io/Woodland-Warriors/about.html)
+    - Logo and navigation bar
+    - Custom hero image with centered text
+    - 'about' section providing information about organisation
+    - Footer section with contact details and social media links
+    <br>
+    <br>
+- ## [Signup Page](https://robtomatkins.github.io/Woodland-Warriors/sign-up.html)
+    - Logo and navigation bar 
+    - Cusom hero image 
+    - Sign up form
+    - Footer section with contact details and social media links 
+    <br>
+    <br>
+- ## Technologies
+    - HTML5
+    - CSS
+    - Git
+    - Github 
+    - Font Awesome
+    - Google Fonts
+    - Pexels
+    - RGBA Color Picker
+    <br>
+    <br>
 
-------
+[**Back to table of contents**](#table-of-contents)
+<hr>
 
-## Release History
+# Site Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- ## [The Logo & Navigation Bar](#project-screenshots) 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    - The logo featuring the organisation name is featured centrally at the top of the page with the navigation bar directly below.
+    - The navigation bar inlcudes Home, About and Signup, all of which are links to corrisponding page.
+    - The logo and navigation are the same color and letter spacing for consistency and the same on every page.
+    - The navigation links display green when you hover over them to make it clear for user.
+    <br>
+    <br>
+- ## [The Hero Image](#project-screenshots) 
+    - The hero image for each page contains clear relevant visual clues as to what the website is about. 
+    - The hero image changes on each page to make clear that you have changed page. 
+    - Inside the landing page hero image is a text box containing information to make the purpose of the website clear.
+    - Inside the About and Sign up page her image is a text box containing a qoute from members of Woodland Warrios to give information to viewers"
+    <br>
+    <br>
+- ## [The Walks Section](#project-screenshots) 
+    - The walks section provides information about upcoming walks, including thier location, date, time and difficulty level.
+    - Each text box header changes colour when hovered over, this matches the about section for consistency running through the site.
+    - Each walk location is a link to the signup page. 
+    <br>
+    <br>
+- ## [The About Section](#project-screenshots) 
+    - The about section provides information about the different aspects of Woodland Warriors, including the walks, the volunteers and the goal and mission of the organisation.
+    - Each text box header changes colour when hovered over, this matches the walks section for consistency running through the site.
+    - Each text box header is a link to the signup page. 
+    <br>
+    <br>
+- ## [The Form section](#project-screenshots) 
+    - The form section contains a sign up form and is located on the sign up page. The form collects the name and email address of the person wanting to sign up, and also gives the option to choose which walk you are interested in before submitting the form. 
+    <br>
+    <br>
+- ## [The Footer Section](#project-screenshots) 
+    - The footer section contains contact information for people interested in joining, including a telephone number and email address. 
+    - The footer also contains icons that are links to corresponding social media platforms.
+    - Each icon changes color when hovered over to match the theme of the rest of the website. 
+    <br>
+    <br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+[**Back to table of contents**](#table-of-contents)
+<hr>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# Testing
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- I have tested the site to ensure it is fully repsonsive on mobile devices, ipads, laptops and desktops. I used devtools to do this. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- I have confirmed the form input fields all require entry and the email address field will only accept and email address. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- I have tested that the website works in Safari, Chrome and Firefox
+<br>
+<br>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- ### Bugs
+    - No bugs found
+    <br>
+    <br>
+- ### Validator Testing
+    - HTML
+        - No errors detected when code input into W3C validator.
+    - CSS 
+        - No errors detected when code input into W3C CSS validator.
+    - Accessibility 
+        - I have checked the site is accessible by running it through lighthouse in devtools.
+        <br>
+        <br>
+- ### Functuality Testing
+    - Signup Form
+        - I have attempted to submit the sign up form without content in each input field to check that the required attribute is funtioning. 
+    - Social Media Links
+        - I have checked that all links to external sites open in new tab, confirming that the _blank attribute is functioning. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Screen shot from lighthouse](assets/images/lighthouse-score-screenshot.jpg)
+<br>
+<br>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+[**Back to table of contents**](#table-of-contents)
+<hr>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Deployment
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- The site was deployed to Github pages. The steps for depoyment were as follows:
+    - I went to the settings tab in in Github Repository, and then to the pages section.
+    - I then selected the main branch from the source drop down menu.
+    - I was then provided with a link to published website.
+    - Live site can be found [here](https://robtomatkins.github.io/Woodland-Warriors/)
+<br>
+<br>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+[**Back to table of contents**](#table-of-contents)
+<hr>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# Credits
 
-------
+- ### Content
+    - The code to make the social media links in the footer was taken from the CI Love Running Project
+    - The template used on github is the CI full template
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+- ### Media
+    - The images for the hero images and backgrounds for text boxes were taking from [Pexels](https://www.pexels.com/search/web%20developer/)
+        - Lara Jameson - 'hero-image-home.jpg'
+        - Lara Jameson - 'hero-image-about.jpg'
+        - Cottonbro - 'hero-image-signup.jpg'
+        - Peter Rock - 'walks-background-1.jpg']
+        - Margerretta - 'walks-background-2.jpg]
+        - Dimitry Llin - 'walks-background-3.jpg']
+        - Inga Seliverstova - 'walks-background-4.jpg']
+        - Karolina Grabowska - 'about-background-1.jpg']
+        - Kelly L - about-background-2.jpg']
+        - Stijin Dijkstra - 'about-background-3.jpg']
+        - Leonid Danilov - 'about-background-4.jpg']
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- ### Guides and Tutorials
+    - [W3schools.com](https://www.w3schools.com/howto/default.asp) for design guides and tutorials
+- ### README.md
+    - [Marcin-Kli/MP1](https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md#surface) READ.md from 'Annies Portfolio wesbite' used as guide
+<br>
+<br>
 
-**How will this affect me?**
+[**Back to table of contents**](#table-of-contents)
+<br>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Project Screenshots
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- **The Logo & Navigation Bar**
+![screenshot of logo and navigation bar](assets/images/logo-nav-screenshot.jpg)
+<br>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- **The Hero Image**
+![screenshot of hero iage](assets/images/hero-image-screenshot.jpg)
+<br>
 
-**So….?**
+- **Walks Section**
+![screenshot of walks section](assets/images/walk-section-screenshot.jpg)
+<br>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- **About Section**
+![screen shot of about section](assets/images/about-section-screenshot.jpg)
+<br>
 
-**Can I opt out?**
+- **Signup Form**
+![screenshot of sign up form](assets/images/signup-form-screenshot.jpg)
+<br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- **The Footer**
+![screenshot of footer with contact details](assets/images/footer-screenshot.jpg)
+<br>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+[**Back to table of contents**](#table-of-contents)
+<br>
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
