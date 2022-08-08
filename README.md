@@ -1,5 +1,5 @@
 # **Rock-Paper-Scissors-lizard-Spock**
-## JavaScript Portolio Project
+## JavaScript Essentials Portolio Project
 <br>
 Rock-Paper-Scissors-Lizard-Spock is a fun, interactive game, with an element of chance. As the player, you will face off against the computer, no skill is needed as the computer choice is selected at random through the use of JavaScript. The game is fully repsonsive, and can be accessed quicky via a mobile device if needed. 
 <br>
