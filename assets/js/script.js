@@ -9,6 +9,8 @@ const paper_div = document.getElementById("paper")
 const scissors_div = document.getElementById("scissors")
 const lizard_div = document.getElementById("lizard")
 const spock_div = document.getElementById("spock")
+const player_div = document.getElementById("player")
+const comp_div = document.getElementById("comp")
 
 /* computer choice array - chooses either rock, paper, scissors, lizard or spock from the array*/
 function getCompChoice() {
@@ -18,17 +20,17 @@ function getCompChoice() {
     
 }
 
-
+/* function for if player wins - increases playerScore by 1, displays message and changes colour of border on player label */
 function youWin() {
     playerScore++; 
     playerScore_span.innerHTML = playerScore;
-    gameMessage_div.innerHTML = "You win!"
+    gameMessage_div.innerHTML = "You win!";
 }
 
 function youLose() {
     compScore++;
     compScore_span.innerHTML = compScore
-    gameMessage_div.innerHTML = "You lose... bad luck!"
+    gameMessage_div.innerHTML = "You lose... bad luck!";
 
 }
 
