@@ -28,7 +28,6 @@ Rock-Paper-Scissors-Lizard-Spock is a fun, interactive game, with an element of 
     - The Game Message Area
     - The Game Controls Area
     - The Scoreboard Area 
-    - The Footer
 - [**Testing**](#testing)
     - Bugs
     - Responsive Testing
