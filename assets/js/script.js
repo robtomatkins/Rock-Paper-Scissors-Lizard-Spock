@@ -19,20 +19,21 @@ function getCompChoice() {
 }
 
 
-function youWin(player, comp) {
+function youWin() {
     playerScore++; 
-    console.log(playerScore);
     playerScore_span.innerHTML = playerScore;
     gameMessage_div.innerHTML = "You win!"
 }
 
 function youLose() {
     compScore++;
-    console.log(compScore);
+    compScore_span.innerHTML = compScore
+    gameMessage_div.innerHTML = "You lose... bad luck!"
 
 }
 
 function draw() {
+    gameMessage_div.innerHTML = "It's a draw... try again!"
 
 }
 /* game function is called when rock_div is clicked */
