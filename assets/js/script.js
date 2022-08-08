@@ -10,7 +10,32 @@ const scissors_div = document.getElementById("scissors")
 const lizard_div = document.getElementById("lizard")
 const spock_div = document.getElementById("spock")
 
-/* computer choice array - chooses either rock, paper, scissors, lizard or spock from the array*/
+runGame();
+
+function runGame() {
+    rock_div.addEventListener('click', function() {
+        game("r"); 
+    })
+    
+    paper_div.addEventListener('click', function() {
+        game("p"); 
+    })
+    
+    scissors_div.addEventListener('click', function() {
+        game("sc"); 
+    })
+    
+    lizard_div.addEventListener('click', function() {
+        game("l"); 
+    })
+    
+    spock_div.addEventListener('click', function() {
+        game("sp"); 
+    })
+    
+    }
+
+/* computer choice array - chooses either rock, paper, scissors, lizard or spock from the array - This is how we get the computer choie */
 function getCompChoice() {
     const choices = ['r', 'p', 'sc', 'l', 'sp'];
     const randomNumber = Math.floor(Math.random() * 5);
@@ -18,11 +43,9 @@ function getCompChoice() {
     
 }
 
-
-
-/* game function is called when rock_div is clicked */
+/* game function is called when rock_div/paper_div/scissors_div/lizard_div or spock_div is clicked */
 function game(playerChoice) {
-     const compChoice = getCompChoice();
+     const compChoice = getCompChoice(); /*  <---- We make compChoice a variable of the function GetCompChoice to use in switch case*/
      switch (playerChoice + compChoice) {
         case "rl":
         case "scl":
@@ -34,7 +57,7 @@ function game(playerChoice) {
         case "rs":
         case "pr":
         case "scp":
-            console.log("You Win!");
+            youWin();
             break;
         case "lr":
         case "lsc":
@@ -46,39 +69,25 @@ function game(playerChoice) {
         case "sr":
         case "rp":
         case "psc":
-            console.log("You lose!");
+            youLose();
             break;
         case "rr":
         case "pp":
         case "scsc":
         case "spsp":
         case "ll":
-            console.log("It's a draw!")
+            draw();
             break;
      }
 }
 
-function runGame() {
-rock_div.addEventListener('click', function() {
-    game("r"); 
-})
+function youWin();
 
-paper_div.addEventListener('click', function() {
-    game("p"); 
-})
+function youLose();
 
-scissors_div.addEventListener('click', function() {
-    game("sc"); 
-})
+function draw();
 
-lizard_div.addEventListener('click', function() {
-    game("l"); 
-})
 
-spock_div.addEventListener('click', function() {
-    game("sp"); 
-})
 
-}
-
-runGame();
+/* testing Notes - tested game was working by pressing each control button until each option of win, draw and lose appeard in console.log */
+/* development notes - consider adding first to 5 feature by using .length method paired with an alert function 
