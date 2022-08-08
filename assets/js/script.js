@@ -1,3 +1,6 @@
+/* To write my code I have followed along with the Web Development Tutorial - JavaScript, HTML, CSS - Rock Paper Scissors Game, on freeCodeCamp.org.
+I have used this tutorial as a guide to gain a better understanding of functions, and have changed and built on the code along the way include the Spock and Lizard elements to the game */
+
 let playerScore = 0;
 let compScore = 0;
 const playerScore_span = document.getElementById("player-score");
@@ -104,3 +107,5 @@ function draw() {
     gameMessage_div.innerHTML = "It's a draw... try again!";
 
 }
+
+
