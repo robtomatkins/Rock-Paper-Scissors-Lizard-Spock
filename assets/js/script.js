@@ -2,15 +2,13 @@ let playerScore = 0;
 let compScore = 0;
 const playerScore_span = document.getElementById("player-score");
 const compScore_span = document.getElementById("comp-score");
-const scoreBoard_div = document.getElementById("score-board");
-const gameMessage_div = document.getElementById("game-message")
-const rock_div = document.getElementById("rock")
-const paper_div = document.getElementById("paper")
-const scissors_div = document.getElementById("scissors")
-const lizard_div = document.getElementById("lizard")
-const spock_div = document.getElementById("spock")
-let compScoreImage = document.getElementById("comp-image")
-let playerScoreImage = document.getElementById("player-image")
+const gameMessage_div = document.getElementById("game-message");
+const rock_div = document.getElementById("rock");
+const paper_div = document.getElementById("paper");
+const scissors_div = document.getElementById("scissors");
+const lizard_div = document.getElementById("lizard");
+const spock_div = document.getElementById("spock");
+
 
 /* computer choice array - chooses either rock, paper, scissors, lizard or spock from the array*/
 function getCompChoice() {
@@ -24,16 +22,16 @@ function getCompChoice() {
 function game(playerChoice) {
      const compChoice = getCompChoice();
      switch (playerChoice + compChoice) {
-        case "rl":
-        case "scl":
-        case "lp":
-        case "lsp":
-        case "psp":
-        case "spr":
-        case "spsc":
-        case "rs":
-        case "pr":
-        case "scp":
+        case "rl": 
+        case "scl": 
+        case "lp": 
+        case "lsp": 
+        case "psp": 
+        case "spr": 
+        case "spsc": 
+        case "rs": 
+        case "pr": 
+        case "scp": 
             youWin();
             break;
         case "lr":
@@ -63,23 +61,23 @@ function game(playerChoice) {
 function runGame() {
 rock_div.addEventListener('click', function() {
     game("r"); 
-})
+});
 
 paper_div.addEventListener('click', function() {
     game("p"); 
-})
+});
 
 scissors_div.addEventListener('click', function() {
     game("sc"); 
-})
+});
 
 lizard_div.addEventListener('click', function() {
     game("l"); 
-})
+});
 
 spock_div.addEventListener('click', function() {
     game("sp"); 
-})
+});
 
 }
 
@@ -90,17 +88,19 @@ function youWin() {
     playerScore++; 
     playerScore_span.innerHTML = playerScore;
     gameMessage_div.innerHTML = "You win!";
+
 }
 
 /* function for if player loses - increases compScore by 1 & displays lose message */
 function youLose() {
     compScore++;
-    compScore_span.innerHTML = compScore
+    compScore_span.innerHTML = compScore;
     gameMessage_div.innerHTML = "You lose... bad luck!";
 
 }
 
+/*function for draw - no increment for compScore or playerScore and displays draw message */
 function draw() {
-    gameMessage_div.innerHTML = "It's a draw... try again!"
+    gameMessage_div.innerHTML = "It's a draw... try again!";
 
 }

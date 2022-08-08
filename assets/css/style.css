@@ -190,6 +190,18 @@
 
 /* game screen styling */
 
+#game-container {
+    width: 800px;
+    height: 400px;
+    background-color: #74726e;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 16px #191919;
+
+}
+
 #score-board {
     width: 200px;
     margin: 20px auto;
@@ -214,7 +226,7 @@
     background-color:#191919;
     position: absolute;
     top: 15px;
-    left: -140px;
+    left: -90px;
     border-radius: 5px;
     border: solid 5px#efbca5;
     color: #f9f5ec;
@@ -224,7 +236,7 @@
     background-color: #191919;
     position: absolute;
     top: 15px;
-    right: -140px;
+    right: -80px;
     border-radius: 5px;
     border: solid 5px #efbca5;
     color: #f9f5ec;
@@ -258,5 +270,42 @@
     -webkit-transition-timing-function: ease; 
     transform: scale(1.2); 
 } 
+
+/* Footer Style Rules */
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #191919;
+    position: absolute;
+    bottom: 0;
+}
+
+footer h2 {
+    color: #eeeeee;
+    text-align: center;
+    font-size: 105%;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    font-size: 200%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+footer i {
+    color: #f9f5ec;
+}
+
+footer i:hover {
+    color: #d6543e;
+}
 
 
